@@ -279,6 +279,11 @@ def main(args):
 
 if __name__ == "__main__":
     args = default_argument_parser().parse_args()
+    from detectron2.data.datasets import register_coco_instances
+
+    for d in ["train", "val"]:
+        register_coco_instances(f"radis_{d}", {}, f"datasets/radis_coco/annotations/instances_{d}2017.json", f"datasets/radis_coco/{d}2017")
+
     print("Command Line Args:", args)
     launch(
         main,
