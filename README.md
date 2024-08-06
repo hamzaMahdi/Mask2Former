@@ -8,6 +8,7 @@
   <img src="https://bowenc0221.github.io/images/maskformerv2_teaser.png" width="100%" height="100%"/>
 </div><br/>
 
+### rememeber to use datumaro to preprocess and split data
 ### Features
 * A single architecture for panoptic, instance and semantic segmentation.
 * Support major segmentation datasets: ADE20K, Cityscapes, COCO, Mapillary Vistas.
